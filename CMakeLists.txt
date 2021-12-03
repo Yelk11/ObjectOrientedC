@@ -6,8 +6,9 @@ project(OOC
 include(CTest)
 enable_testing()
 
-add_library(MyNew New.c New.h)
 add_library(MySet Set.c Set.h)
+add_library(MyNew New.c New.h)
+
 add_library(MyObject Object.c Object.h)
 add_executable(OOC main.c)
 

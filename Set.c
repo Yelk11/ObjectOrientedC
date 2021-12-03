@@ -7,11 +7,15 @@
 
 static int heap [MANY];
 
+/***
+ * Questions:
+ * why is type param not used?
+***/
 void * new (const void * type, ...)
 { 
     int * p; /* & heap[1..] */
     for (p = heap + 1; p < heap + MANY; ++ p) 
-        if (! * p)
+        if (! * p) // checks if the pointer 'p' is equal to 0
             break;
     assert(p < heap + MANY);
     * p = MANY; 
