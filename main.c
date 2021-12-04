@@ -1,7 +1,9 @@
 #include <stdio.h>
-#include "New.h" 
-#include "Object.h" 
+
 #include "Set.h"
+#include "Object.h"
+#include "New.h"
+
 int main ()
 { 
     void * s = new(Set);
