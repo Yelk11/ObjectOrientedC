@@ -6,13 +6,14 @@ project(OOC
 include(CTest)
 enable_testing()
 
-add_library(MySet Set.c Set.h)
-add_library(MyNew New.c New.h)
+add_library(mySet Set.c Set.h)
+add_library(myBag Bag.c)
+add_library(myNew New.h)
+add_library(myObj Object.h)
 
-add_library(MyObject Object.c Object.h)
 add_executable(OOC main.c)
 
-target_link_libraries(OOC PRIVATE MyNew MySet MyObject)
+target_link_libraries(OOC PRIVATE mySet myBag myNew myObj)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
