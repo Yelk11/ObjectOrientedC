@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "new.h"
+#include "New.h"
 #include "Set.h"
 #include "Object.h"
 

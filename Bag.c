@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "new.h"
+#include "New.h"
 #include "Set.h"
 #include "Object.h"
 
